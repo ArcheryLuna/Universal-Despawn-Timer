@@ -1,0 +1,23 @@
+# Gradle
+.gradle/
+build/
+
+# Java
+*.class
+out/
+hs_err_pid*
+replay_pid*
+
+# IDEs and editors
+*.iml
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Operating system metadata
+.DS_Store
+Thumbs.db

@@ -1,0 +1,19 @@
+name: UniversalDespawnTimer
+version: '${version}'
+main: dev.seb.despawntimer.UniversalDespawnTimerPlugin
+api-version: '1.19'
+author: seb
+description: Configurable item despawn timers with optional LifeStealZ heart support.
+softdepend: [LifeStealZ]
+
+commands:
+  despawntimer:
+    description: Reload or inspect UniversalDespawnTimer.
+    usage: /<command> <reload|status>
+    aliases: [udt]
+    permission: universaldespawntimer.admin
+
+permissions:
+  universaldespawntimer.admin:
+    description: Allows use of UniversalDespawnTimer admin commands.
+    default: op
