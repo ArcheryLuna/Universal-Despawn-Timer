@@ -1,0 +1,33 @@
+# UniversalDespawnTimer
+# Durations accept ticks (t), seconds (s), minutes (m), hours (h), and days (d).
+# Examples: 6000t, 30s, 15m, 2h, 1d. Use "default" to leave the
+# server's normal item despawn behaviour untouched, or "never" to keep it forever.
+# Timers advance only while the item's chunk is loaded and the server is ticking.
+
+# Every ordinary dropped item keeps the server's normal despawn and mob-pickup
+# behavior unless a more specific rule is added below.
+defaults:
+  despawn-time: default
+  prevent-mob-pickup: false
+
+# Optional LifeStealZ integration. Every LifeStealZ custom item whose
+# customItemType is "heart" lasts for 15 loaded minutes. Mobs cannot pick hearts
+# up, but players can still collect them normally.
+lifestealz-hearts:
+  enabled: true
+  despawn-time: 15m
+  prevent-mob-pickup: true
+
+# Optional rules by Bukkit Material name. Material rules override "defaults",
+# while the LifeStealZ heart rule has the highest priority.
+material-overrides: {}
+#  DIAMOND:
+#    despawn-time: 10m
+#    prevent-mob-pickup: true
+#  COBBLESTONE:
+#    despawn-time: 2m
+#    prevent-mob-pickup: false
+
+# How often active timer metadata is persisted and stale tracked entities are
+# cleaned up. Expiration itself is precise to one server tick.
+check-interval-ticks: 20

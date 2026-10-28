@@ -130,8 +130,9 @@ The completed plugin jar is written to
 ## Project information
 
 - Contributors are listed in [CONTRIBUTORS.md](CONTRIBUTORS.md).
+- Development setup, tests, and pull requests are described in
+  [CONTRIBUTING.md](CONTRIBUTING.md).
 - Security issues should be reported according to [SECURITY.md](SECURITY.md).
-- Contributions should include focused tests and keep LifeStealZ optional.
 
 ## License
 
