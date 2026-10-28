@@ -2,7 +2,8 @@ name: UniversalDespawnTimer
 version: '${version}'
 main: dev.seb.despawntimer.UniversalDespawnTimerPlugin
 api-version: '1.19'
-author: seb
+author: ArcheryLuna
+website: https://github.com/ArcheryLuna/UniversalDespawnTimer
 description: Configurable item despawn timers with optional LifeStealZ heart support.
 softdepend: [LifeStealZ]
 
